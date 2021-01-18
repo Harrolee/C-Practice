@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "build charStrings",
+			"command": "gcc",
+			"args": [
+				"-g",
+				"-o",
+				"charStrings",
+				"charStrings.c"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\cygwin64\\bin\\gcc.exe"
+		}
+	]
+}
