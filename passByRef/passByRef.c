@@ -1,17 +1,13 @@
-#include <stdio.h>
-// function will square the number passed into it.
+# include <stdio.h>
 
-void squareNumber(int *const pnum){
-    // I want to set the value at pnum's address equal to dereferenced pnum times itself
-    *pnum = *pnum * *pnum;
+
+// take a pointer, print the square of the value at that pointer:
+void square(const int *base){
+    printf("%d",(*base) * (*base));
 }
 
-void main(){
-    int num;
-    
-    printf("I'll square the number you type\n");
-    scanf("%d",&num);
-    squareNumber(&num);
-    printf("%d", num);
-
+int main(){
+    int valToSquare;
+    scanf("%d",&valToSquare);
+    square(&valToSquare);
 }
